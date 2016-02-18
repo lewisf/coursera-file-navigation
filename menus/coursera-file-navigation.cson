@@ -1,0 +1,30 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle coursera-file-navigation'
+      'command': 'coursera-file-navigation:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'coursera-file-navigation'
+      'submenu': [
+        {
+          'label': 'Go to test'
+          'command': 'coursera-file-navigation:go-to-test'
+        },
+        {
+          'label': 'Go to stylus'
+          'command': 'coursera-file-navigation:go-to-stylus'
+        },
+        {
+          'label': 'Go to componentx`'
+          'command': 'coursera-file-navigation:go-to-component'
+        }
+      ]
+    ]
+  }
+]
